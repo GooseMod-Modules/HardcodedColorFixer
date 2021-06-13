@@ -10,7 +10,7 @@ goosemodHandlers: {
     const normaliseColor = (str) => { ctx.fillStyle = str; return ctx.fillStyle; };
     const normaliseColors = (str) => str.replace(/rgb\(([0-9]+), ([0-9]+), ([0-9]+)\)/g, normaliseColor);
 
-    const sheet = window.document.styleSheets.filter((x) => x.href)[0];
+    const sheet = [...window.document.styleSheets].filter((x) => x.href)[0];
 
     const darkThemeVars = getVariablesArr([...sheet.cssRules].filter((x) => x.selectorText === '.theme-dark')[1].cssText);
     const lightThemeVars = getVariablesArr([...sheet.cssRules].filter((x) => x.selectorText === '.theme-light')[1].cssText);
