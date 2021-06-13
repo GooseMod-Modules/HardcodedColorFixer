@@ -1,0 +1,10 @@
+{
+  "name": "Hardcoded Color Fixer",
+  "description": "Changes hardcoded colors to variables - improves themes",
+  "version": "3.0.0",
+  "authors": ["506482395269169153"],
+  "tags": [
+    "backend"
+  ],
+  "main": "index.js"
+}
